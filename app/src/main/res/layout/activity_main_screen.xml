@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="OPTIONS!!"
+        android:id="@+id/op1"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="Login"
+        android:layout_below="@+id/op1"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="Register"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/b1"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/q1"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:text="ListView"
+            android:layout_below="@+id/b2"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+        <Button
+            android:id="@+id/recyc"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/q1"
+            android:text="Recyclerview"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/dynamic"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="Dynamic Layout"
+        android:textSize="17dp"
+        android:layout_below="@+id/recyc"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/implicit"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/dynamic"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/button"
+        android:text="Click here to check Enjay website"
+        android:textColor="#fff"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/frgment"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="Fragments"
+        android:textSize="17dp"
+        android:layout_below="@+id/implicit"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/customAlert"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="Custom Alert Dialog Box"
+        android:textSize="17dp"
+        android:layout_below="@+id/frgment"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/json"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:text="JSON "
+        android:textSize="17dp"
+        android:layout_below="@+id/customAlert"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/retroEx"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:text="Retrofit"
+            android:textSize="17dp"
+            android:layout_below="@+id/json"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:onClick="addNotification"
+            android:id="@+id/notif"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/retroEx"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button"
+            android:text="Notification"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/grid"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:text="Grid View"
+            android:textSize="17dp"
+            android:layout_below="@+id/notif"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/firebasedb"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:text="Firebase example"
+            android:textSize="17dp"
+            android:layout_below="@+id/grid"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/googleauth"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:text="Firebase Google Auth page"
+            android:textSize="17dp"
+            android:layout_below="@+id/firebasedb"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

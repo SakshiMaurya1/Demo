@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022e58"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#022e58">
+
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Signup"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+
+        <EditText
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:ems="15"
+            android:hint="Name"
+
+            android:inputType="textPersonName"
+            app:errorEnabled="true" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:ems="15"
+            android:hint="E-mail ID"
+            android:inputType="textEmailAddress"
+            app:errorEnabled="true" />
+
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:ems="15"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:maxLength="10"
+            app:errorEnabled="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="none"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="11"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="none"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="11"
+                android:hint="Confirm Password"
+                android:inputType="textWebPassword"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Submit"
+            android:textColor="#ff8c00" />
+    </RelativeLayout>
+</RelativeLayout>

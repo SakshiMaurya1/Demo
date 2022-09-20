@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoNew</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">200267098718-j04s9ipm554pu97il49dqvt8ph1esa0d.apps.googleusercontent.com</string>
+
+
+</resources>

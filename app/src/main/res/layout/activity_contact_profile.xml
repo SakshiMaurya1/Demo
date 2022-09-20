@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#022e58"
+    tools:context=".ContactProfile">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/cd1"
+        android:text="CONTACT DETAILS"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80sp"
+        android:layout_height="130sp"
+        android:layout_below="@+id/cd1"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="60sp"
+        android:src="@drawable/contact" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactname"
+        android:layout_marginTop="50sp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginBottom="5sp"
+        android:layout_toRightOf="@+id/img1"
+        android:layout_below="@+id/cd1"
+        android:background="@drawable/forget"
+        />
+
+    <TextView
+        android:id="@+id/contactnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactname"
+        android:layout_toRightOf="@+id/img1"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="5sp"
+        android:background="@drawable/forget" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactemail"
+        android:layout_toRightOf="@+id/img1"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="5sp"
+        android:layout_below="@+id/contactnum"
+        android:background="@drawable/forget"
+        />
+
+    <TextView
+        android:id="@+id/sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="5sp"
+        android:background="@drawable/forget"
+        android:text="Click here to send SMS" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whatsapp"
+        android:text="Click here to send a whatsapp message"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="15sp"
+        android:layout_below="@+id/sms"
+        android:background="@drawable/forget"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefcheck"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="15sp"
+        android:layout_below="@+id/whatsapp"
+        android:background="@drawable/forget"
+        />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prefcheck"
+        android:layout_centerHorizontal="true"
+        android:text="Log Out"/>
+
+</RelativeLayout>
